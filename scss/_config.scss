@@ -1,0 +1,29 @@
+$Primary-Color-Soft-orange: hsl(35, 77%, 62%);
+$Primary-Color-Soft-red: hsl(5, 85%, 63%);
+$Neutral-Color-Off-white: hsl(36, 100%, 99%);
+$Neutral-Color-Grayish-blue: hsl(233, 8%, 79%);
+$Neutral-Color-Dark-grayish-blue: hsl(236, 13%, 42%);
+$Neutral-Color-Very-dark-blue: hsl(240, 100%, 5%);
+@mixin easeOut{
+  transition: all 0.5s ease-out;
+}
+@mixin comeFromRight{
+  @keyframes comeFromRight {
+      from {
+        transform: translateX(100%); // Start position (outside the container)
+      }
+      to {
+        transform: none; // End position (original position)
+      }
+    }
+}
+@mixin comeFromTop{
+  @keyframes comeFromRight {
+      from {
+        transform: translateY(-100%); // Start position (outside the container)
+      }
+      to {
+        transform: none; // End position (original position)
+      }
+    }
+}
