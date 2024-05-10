@@ -5,10 +5,10 @@ function updateImageSrc() {
   const viewportWidth = window.innerWidth;
 
  if (viewportWidth <= 920) {
-    image.src = '/dist/assets/images/image-web-3-mobile.jpg';
+    image.src = './assets/images/image-web-3-mobile.jpg';
     console.log("hey")
   } else {
-    image.src = '/dist/assets/images/image-web-3-desktop.jpg';
+    image.src = './assets/images/image-web-3-desktop.jpg';
   }
 }
 updateImageSrc();
